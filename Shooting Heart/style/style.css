@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#canvas {
+  display: block;
+}
+
+#bear {
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
+  width: 110px;
+  z-index: 10;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+#bear:hover {
+  width: 112px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#rotateNotice .overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 0, 30, 0.95);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+}
